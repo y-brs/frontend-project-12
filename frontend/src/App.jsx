@@ -7,6 +7,7 @@ const App = () => {
   return (
     <div className='d-flex flex-column h-100'>
       <Navbar />
+
       <Routes>
         <Route path='/' element={<Login />} />
         <Route path='/login' element={<Login />} />

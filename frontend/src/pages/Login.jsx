@@ -1,6 +1,5 @@
-import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import imageLogin from '../assets/login.jpg';
+import { NavLink } from 'react-router-dom';
 import LoginForm from '../components/LoginForm';
 
 const Login = () => {
@@ -13,7 +12,7 @@ const Login = () => {
           <div className='card shadow-sm'>
             <div className='card-body row p-5'>
               <div className='col-12 col-md-6 d-flex align-items-center justify-content-center'>
-                <img className='rounded-circle' src={imageLogin} alt={t('Login.imageAlt')} />
+                <img className='rounded-circle' src='/assets/login.jpg' alt={t('Login.imageAlt')} />
               </div>
 
               <LoginForm />
@@ -21,7 +20,8 @@ const Login = () => {
 
             <div className='card-footer p-4'>
               <div className='text-center'>
-                <span>{t('Login.footerText')}</span> <NavLink to='/signup'>{t('Login.footerLink')}</NavLink>
+                <span>{t('Login.footerText')}</span>{' '}
+                <NavLink to='/signup'>{t('Login.footerLink')}</NavLink>
               </div>
             </div>
           </div>
